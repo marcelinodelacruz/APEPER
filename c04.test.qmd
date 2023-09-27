@@ -1,0 +1,16 @@
+# Modelos nulos y test de hipótesis
+
+## Simulaciones y envueltas   
+
+
+## GoF, MAD test etc   
+
+## Modelos paramétricos (ppm etc)    
+
+## Modelos no paramétricos     
+
+## Perfect simulation    
+
+
+
+See @knuth84 for additional discussion of literate programming.

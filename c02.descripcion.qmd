@@ -1,0 +1,14 @@
+# Descripción de patrones de puntos
+
+## Funciones sumario   
+### Función K de Ripley
+### Función de correlación de par y O-Ring
+### Otras funciones: H, F, J, D (ver las de Wiegand poarar perfect simulation)
+
+## Test CSR
+
+## Descripción de la intensidad: patrones inhomogéneos y agregación virtual
+
+## Dependencia: test de Berman (igual dejarlo para modelización?)
+
+See @knuth84 for additional discussion of literate programming.

@@ -1,0 +1,11 @@
+# Patrones con marcas discretas
+
+## Funciones bivariadas (eg. Kcross, Kdot)
+
+## Funciones trivariadas: De la Cruz et al 2008)   
+
+## Idar   
+
+## Modelos nulos no paramétricos: randon labeling y toroidal shift 
+
+## modelos nulos paramétricos (no espaciales): simulando GLMs

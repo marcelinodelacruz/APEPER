@@ -1,0 +1,8 @@
+# Patrones de "puntos" masivos
+
+## Pescador et al. "Halo" 
+
+## Pescador et al. Overlapp test
+
+## Wiegand et al. 2006
+

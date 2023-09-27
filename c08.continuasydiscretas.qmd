@@ -1,0 +1,9 @@
+# Patrones con marcas discretas y continuas
+
+## Funciones cruzadas (eg. mrkcross Mía en Nixon) 
+
+## IFDAR y similares   
+
+## Modelos nulos no parametricos: randon labeling y toroidal shift 
+
+## modelos nulos paramétricos (no espaciales): simulando GLMs

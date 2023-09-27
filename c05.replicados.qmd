@@ -1,0 +1,10 @@
+# Análisis de patrones de puntos replicados
+
+## Test no paramétricos
+
+## Ajuste de modelos para patrones replicados   
+
+
+
+
+See @knuth84 for additional discussion of literate programming.

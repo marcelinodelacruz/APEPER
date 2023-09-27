@@ -1,0 +1,12 @@
+# Patrones con marcas continuas
+
+## Correlación de marca
+
+## Variograma de marca
+
+
+## Modelos nulos no paramétricos: randon labeling y toroidal shift 
+
+## modelos nulos paramétricos (no espaciales): simulando GLMs
+
+## Análisis de patrones con marcas funcionales

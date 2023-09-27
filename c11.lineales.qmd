@@ -1,0 +1,4 @@
+# Patrones de puntos en una red lineal
+
+## ejemplo atropellos
+

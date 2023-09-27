@@ -1,0 +1,18 @@
+{
+  "hash": "d67e8e09fa7df339592f84c39a8641a4",
+  "result": {
+    "markdown": "# Codificación de patrones de puntos en R   \n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n\n\nComo hemos visto en la introducción, todo patrón de puntos está definido por las coordenadas de los puntos que lo integran más la \"ventana\" (el polígono) que lo delimita. \n\n## Lectura de datos   \n\n`read.xlsx`\nLeer shapefiles\nLectura de imagenes/transformación a formato img\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(xlsx)\ndatos<- read.xlsx(\"datos.xlsx\", sheetIndex=1)\nhead(datos)\n## Poner aquí un trozo de la salida\n```\n:::\n\n\n\n\n::: callout\n## Generación de datos geoestadísticos\nLa generación de interpolaciones estadísticas está fuera del objetivo del libro, pero por conveniencia se incluye aquí un ejemplo de la herramienta `automap`\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# POner un ejemplo con automap y su conversión a im de spatstat.\n## Poner aquí un trozo de la salida\n```\n:::\n\n\n\n:::\n\n\n\n\n\n## Definición de la ventana    \nLo más conveniente suele ser comenzar definiendo la ventana. En **spatstat** lo hacemos con la función `owin`. Por ejemplo, si nuestros puntos están recogidos dentro de un cuadrado que se extiende entre las coordenadas relativas `x= c(0, 100) , y = c(0, 100)`, sólo deberemos indicarle a `owin` la extensión de la ventana en el eje $x$ y en el eje $y$.      \n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(spatstat)\nventana <- owin(xrange = c(0, 100), yrange=c(0,100))\nventana\n## window: rectangle = [0, 100] x [0, 100] units\n```\n:::\n\n\nSi la ventana es estrictamente cuadrada, también la podemos definir usando la función `square` e indicando el tamaño del lado de la misma.\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nventana <- owin(square(r=100))\nventana\n## window: rectangle = [0, 100] x [0, 100] units\n```\n:::\n\n\nLa ventana creada (@fig-ventana) la podemos visualizar con `plot(ventana)`.   \n\n![Ventana creada con la función owin](images/ventana.png){#fig-ventana}\n\nEn el caso de ventanas irregulares, las coordenadas de los puntos que definen los vértices de la misma se proporcionan  con el argumento `poly` y deben ir en forna de lista (`list`), con dos componentes denominados específicamente $x$ e $y$:\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nborde <- list(x=c(0.2,0.3,0.5, 0.8,0.6,0.3),\n\t\t  y=c(0.1,0.1,0.2, 0.5,0.7,0.3))\nventana2 <- owin(poly= borde)\nventana2\n## window: polygonal boundary\n## enclosing rectangle: [0.2, 0.8] x [0.1, 0.7] units\n```\n:::\n\n\n\n::: callout-warning\nEs importante que  las coordenadas de los vértices estén ordenadas en sentido antihorario.\n:::\n\n\n\n\n## Creación del patrón de puntos    \n\n## Coordenadas absolutas o coordenadas relativas    \n`affine.ppp`  y `affine.owin`   \n\n\n\n## Patrones de puntos marcados\n\n### Marcas discretas    \n### Marcas continuas \n### Marcas múltiples\n### Marcas funcionales\n\n\n\nSee @knuth84 for additional discussion of literate programming.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {
+      "knitr": [
+        "{\"type\":\"list\",\"attributes\":{},\"value\":[]}"
+      ]
+    },
+    "preserve": null,
+    "postProcess": false
+  }
+}

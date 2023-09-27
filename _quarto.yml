@@ -1,0 +1,38 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Análisis de patrones de puntos ecológicos con R"
+  author: "Marcelino de la Cruz Rot"
+  date: "8/3/2022"
+  chapters:
+    - index.qmd
+    - summary.qmd
+    - c00.introduccion.qmd
+    - c01.codificacion.qmd
+    - c02.descripcion.qmd
+    - c03.modelizacion.qmd
+    - c04.test.qmd
+    - c05.replicados.qmd
+    - c06.continuas.qmd
+    - c07.discretas.qmd
+    - c08.continuasydiscretas.qmd
+    - c08b.masivos.qmd
+    - c09.tridimensionales.qmd
+    - c10.espaciotemporales.qmd
+    - c11.lineales.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+
+
+
